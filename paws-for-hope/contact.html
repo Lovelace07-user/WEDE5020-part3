@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us | Paws for Hope Animal Rescue Johannesburg</title>
+  <meta name="description" content="Contact Paws for Hope in Randburg and Midrand. Find our shelter locations, phone numbers and send us a message.">
+  <meta name="keywords" content="contact Paws for Hope, animal shelter Randburg address, Midrand foster hub, Johannesburg pet rescue contact">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Paws for Hope</h1>
+      <p>Animal Rescue • Johannesburg</p>
+    </div>
+    <button id="menu-toggle" aria-label="Toggle menu">Menu</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Animals for Adoption</a></li>
+        <li><a href="enquiry.html">Volunteer / Sponsor</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="fade-on-scroll">
+      <h2>Get in touch</h2>
+      <p>Questions about adoption, volunteering, or just want to visit? We’re happy to hear from you.</p>
+    </section>
+
+    <section class="fade-on-scroll">
+      <h2>Main Shelter – Randburg</h2>
+      <p>
+        <strong>Address:</strong><br>
+        45 Ferndale Road<br>
+        Randburg, Johannesburg<br>
+        2194<br>
+        Gauteng
+      </p>
+      <p>
+        <strong>Phone:</strong> 011 555 0123<br>
+        <strong>Email:</strong> info@pawsforhope.org.za
+      </p>
+      <p>
+        <strong>Hours:</strong><br>
+        Monday – Friday: 09:00 – 16:00<br>
+        Saturday: 09:00 – 13:00<br>
+        Sunday: Closed (emergencies only)
+      </p>
+      <div id="map"></div>
+    </section>
+
+    <section class="fade-on-scroll">
+      <h2>Foster Hub – Midrand</h2>
+      <p>
+        <strong>Address:</strong><br>
+        12 Willow Crescent<br>
+        Midrand, Johannesburg<br>
+        1685<br>
+        Gauteng
+      </p>
+      <p>
+        <strong>Phone:</strong> 011 555 0189<br>
+        <strong>Email:</strong> midrand@pawsforhope.org.za
+      </p>
+      <p>This spot is mainly for foster care and adoption meet-and-greets. Please make an appointment before coming through.</p>
+    </section>
+
+    <section class="fade-on-scroll">
+      <h2>Send us a message</h2>
+      <form id="contact-form" action="#" method="post" novalidate>
+        <div class="form-group">
+          <label for="name">Full Name *</label>
+          <input type="text" id="name" name="name" required minlength="2" placeholder="Your full name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required placeholder="name@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="subject">Subject *</label>
+          <input type="text" id="subject" name="subject" required placeholder="What is this about?">
+        </div>
+
+        <div class="form-group">
+          <label for="message">Your Message *</label>
+          <textarea id="message" name="message" rows="6" required minlength="15" placeholder="Write your message here..."></textarea>
+        </div>
+
+        <button type="submit">Send Message</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Paws for Hope Animal Rescue. All rights reserved.</p>
+    <p>Non-Profit Organisation | Johannesburg, South Africa</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="services.html">Adoption</a> |
+      <a href="enquiry.html">Volunteer</a> |
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
+  <div id="modal">
+    <div class="modal-box">
+      <h3 id="modal-title">Title</h3>
+      <p id="modal-message">Message</p>
+      <button id="modal-close">Close</button>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+  <script src="js/script.js"></script>
+  <script>
+    document.addEventListener('DOMContentLoaded', function () {
+      if (document.getElementById('map')) {
+        var map = L.map('map').setView([-26.0941, 28.0064], 14);
+        L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
+          attribution: '&copy; OpenStreetMap contributors'
+        }).addTo(map);
+        L.marker([-26.0941, 28.0064]).addTo(map)
+          .bindPopup('Paws for Hope – Main Shelter<br>Randburg').openPopup();
+      }
+    });
+  </script>
+</body>
+</html>

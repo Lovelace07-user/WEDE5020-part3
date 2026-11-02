@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Volunteer or Sponsor | Paws for Hope Animal Rescue</title>
+  <meta name="description" content="Volunteer at Paws for Hope, foster an animal, or become a sponsor. Help us rescue and rehome dogs and cats in Johannesburg.">
+  <meta name="keywords" content="volunteer animal shelter Johannesburg, foster a dog Gauteng, sponsor animal rescue, Paws for Hope volunteer">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Paws for Hope</h1>
+      <p>Animal Rescue • Johannesburg</p>
+    </div>
+    <button id="menu-toggle" aria-label="Toggle menu">Menu</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html">Animals for Adoption</a></li>
+        <li><a href="enquiry.html" class="active">Volunteer / Sponsor</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="fade-on-scroll">
+      <h2>Get Involved</h2>
+      <p>We lean heavily on volunteers and people who support us financially. Whether you’d like to help at the shelter, foster an animal for a while, or just contribute what you can, we’d really like to hear from you.</p>
+    </section>
+
+    <section class="fade-on-scroll">
+      <h2>Send us a message</h2>
+      <p>Fill in the form and we’ll get back to you within a couple of working days.</p>
+
+      <form id="enquiry-form" action="#" method="post" novalidate>
+        <div class="form-group">
+          <label for="fullname">Full Name *</label>
+          <input type="text" id="fullname" name="fullname" required minlength="2" placeholder="Your full name">
+        </div>
+
+        <div class="form-group">
+          <label for="email">Email Address *</label>
+          <input type="email" id="email" name="email" required placeholder="name@example.com">
+        </div>
+
+        <div class="form-group">
+          <label for="phone">Phone Number</label>
+          <input type="tel" id="phone" name="phone" placeholder="e.g. 082 123 4567">
+        </div>
+
+        <div class="form-group">
+          <label for="interest">I’m interested in *</label>
+          <select id="interest" name="interest" required>
+            <option value="">-- Please select --</option>
+            <option value="volunteer">Becoming a Volunteer</option>
+            <option value="foster">Fostering an Animal</option>
+            <option value="sponsor">Becoming a Sponsor / Donor</option>
+            <option value="adopt">Adopting an Animal</option>
+            <option value="other">Something else</option>
+          </select>
+        </div>
+
+        <div class="form-group">
+          <label for="message">Anything else you’d like to tell us?</label>
+          <textarea id="message" name="message" rows="5" placeholder="A bit about yourself or how you’d like to help..."></textarea>
+        </div>
+
+        <button type="submit">Send Enquiry</button>
+      </form>
+    </section>
+
+    <section class="fade-on-scroll">
+      <h2>A few ways you can help</h2>
+      <ul>
+        <li><strong>Help at the shelter</strong> – walking dogs, cleaning, spending time with the animals</li>
+        <li><strong>Foster</strong> – give an animal a temporary home until we find them a permanent one</li>
+        <li><strong>Sponsor an animal</strong> – cover food or medical costs for a specific dog or cat</li>
+        <li><strong>Donate</strong> – any amount helps keep the work going</li>
+        <li><strong>Share our posts</strong> – the more people who see the animals, the better their chances</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Paws for Hope Animal Rescue. All rights reserved.</p>
+    <p>Non-Profit Organisation | Johannesburg, South Africa</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="services.html">Adoption</a> |
+      <a href="enquiry.html">Volunteer</a> |
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
+  <div id="modal">
+    <div class="modal-box">
+      <h3 id="modal-title">Title</h3>
+      <p id="modal-message">Message</p>
+      <button id="modal-close">Close</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>

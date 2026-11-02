@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Animals for Adoption | Paws for Hope Johannesburg</title>
+  <meta name="description" content="Browse dogs and cats available for adoption at Paws for Hope. All animals are vaccinated and ready for their forever homes in Gauteng.">
+  <meta name="keywords" content="adopt a dog Johannesburg, cat adoption Gauteng, animals for adoption Randburg, Paws for Hope adoption">
+  <meta name="robots" content="index, follow">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <h1>Paws for Hope</h1>
+      <p>Animal Rescue • Johannesburg</p>
+    </div>
+    <button id="menu-toggle" aria-label="Toggle menu">Menu</button>
+    <nav>
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="about.html">About Us</a></li>
+        <li><a href="services.html" class="active">Animals for Adoption</a></li>
+        <li><a href="enquiry.html">Volunteer / Sponsor</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="fade-on-scroll">
+      <h2>Animals Looking for Forever Homes</h2>
+      <p>Every animal listed here has been vaccinated and sterilised (when old enough). They’re ready for a proper home. Have a look and get in touch if one of them catches your eye — we can arrange a meet-and-greet.</p>
+    </section>
+
+    <div class="filter-bar fade-on-scroll">
+      <input type="text" id="animal-search" placeholder="Search by name or description...">
+      <select id="type-filter">
+        <option value="all">All Animals</option>
+        <option value="dog">Dogs only</option>
+        <option value="cat">Cats only</option>
+      </select>
+    </div>
+
+    <section class="animal-grid">
+      <article class="animal-card" data-type="dog">
+        <img src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?w=400" alt="Max – friendly Labrador mix available for adoption" class="gallery-img">
+        <h3>Max – Male Labrador Mix</h3>
+        <p><strong>Age:</strong> 3 years | <strong>Size:</strong> Large</p>
+        <p>Max is a friendly, energetic boy who loves long walks and a good game of fetch. He’s great with kids and other dogs. Looking for an active family who will give him plenty of exercise.</p>
+      </article>
+
+      <article class="animal-card" data-type="dog">
+        <img src="https://images.unsplash.com/photo-1537151608828-ea2b9787100d?w=400" alt="Bella – small Jack Russell mix looking for a home" class="gallery-img">
+        <h3>Bella – Female Jack Russell Mix</h3>
+        <p><strong>Age:</strong> 2 years | <strong>Size:</strong> Small</p>
+        <p>Bella is bright, affectionate and full of personality. She’s house-trained and loves being the centre of attention. She’d do well in a home with older children.</p>
+      </article>
+
+      <article class="animal-card" data-type="dog">
+        <img src="https://images.unsplash.com/photo-1568572933382-74d440642117?w=400" alt="Rocky – loyal German Shepherd mix available for adoption" class="gallery-img">
+        <h3>Rocky – Male German Shepherd Mix</h3>
+        <p><strong>Age:</strong> 4 years | <strong>Size:</strong> Large</p>
+        <p>Rocky is loyal and protective. He’s done basic obedience training and would suit someone with a bit of experience who can give him structure and love.</p>
+      </article>
+
+      <article class="animal-card" data-type="cat">
+        <img src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?w=400" alt="Luna – gentle domestic shorthair cat for adoption" class="gallery-img">
+        <h3>Luna – Female Domestic Shorthair</h3>
+        <p><strong>Age:</strong> 1 year | <strong>Size:</strong> Medium</p>
+        <p>Luna is gentle and playful. She enjoys quiet evenings and would be happy in an apartment or a house with other cats.</p>
+      </article>
+
+      <article class="animal-card" data-type="cat">
+        <img src="https://images.unsplash.com/photo-1574158622682-e40e69881006?w=400" alt="Simba – calm senior longhair cat looking for a peaceful home" class="gallery-img">
+        <h3>Simba – Male Domestic Longhair</h3>
+        <p><strong>Age:</strong> 5 years | <strong>Size:</strong> Medium</p>
+        <p>Simba is a calm, affectionate senior who loves a good lap. He’s looking for a peaceful home where he can settle in and be spoiled a little.</p>
+      </article>
+    </section>
+
+    <section class="fade-on-scroll">
+      <h2>How adoption works</h2>
+      <ol>
+        <li>Browse the animals on this page</li>
+        <li>Fill in an enquiry form or get in touch</li>
+        <li>Come meet the animal at the shelter</li>
+        <li>We do a quick home check</li>
+        <li>If everything feels right, you take your new family member home</li>
+      </ol>
+      <p><a href="enquiry.html" class="btn">Start an Adoption Enquiry</a></p>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; <span id="year">2026</span> Paws for Hope Animal Rescue. All rights reserved.</p>
+    <p>Non-Profit Organisation | Johannesburg, South Africa</p>
+    <p>
+      <a href="index.html">Home</a> |
+      <a href="about.html">About</a> |
+      <a href="services.html">Adoption</a> |
+      <a href="enquiry.html">Volunteer</a> |
+      <a href="contact.html">Contact</a>
+    </p>
+  </footer>
+
+  <div id="lightbox">
+    <button id="lightbox-close" aria-label="Close">&times;</button>
+    <img id="lightbox-img" src="" alt="">
+  </div>
+
+  <div id="modal">
+    <div class="modal-box">
+      <h3 id="modal-title">Title</h3>
+      <p id="modal-message">Message</p>
+      <button id="modal-close">Close</button>
+    </div>
+  </div>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
